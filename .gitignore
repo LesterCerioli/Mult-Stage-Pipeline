@@ -1,0 +1,55 @@
+# From .NET Core 3.0 you can use the command: `dotnet new gitignore` to generate a customizable .gitignore file
+
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+
+# Visual Studio Code
+.vscode
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Visual Studio 2015
+.vs/
+./bin/
+./obj/
+./Debug
+
+
+Simple.Domain/obj/Debug/net6.0/Simple.Domain.assets.cache
+Simple.Domain/obj/Debug/net6.0/Simple.Domain.GeneratedMSBuildEditorConfig.editorconfig
+Simple.Repo/obj/Debug/net6.0/Simple.Repo.assets.cache
+Simple.Repo/obj/Debug/net6.0/Simple.Repo.GeneratedMSBuildEditorConfig.editorconfig
+Simple.Tests/bin/Debug/net6.0/CoverletSourceRootsMapping
+Simple.Tests/obj/Debug/net6.0/Simple.Tests.assets.cache
+Simple.Tests/obj/Debug/net6.0/Simple.Tests.csproj.AssemblyReference.cache
+Simple.Tests/obj/Debug/net6.0/Simple.Tests.GeneratedMSBuildEditorConfig.editorconfig
+Simple.Domain/obj/Debug/net6.0/Simple.Domain.assets.cache
+Simple.Domain/obj/Debug/net6.0/Simple.Domain.GeneratedMSBuildEditorConfig.editorconfig
+Simple.Repo/obj/Debug/net6.0/Simple.Repo.assets.cache
+Simple.Repo/obj/Debug/net6.0/Simple.Repo.GeneratedMSBuildEditorConfig.editorconfig
+Simple.Tests/bin/Debug/net6.0/CoverletSourceRootsMapping
+Simple.Tests/obj/Debug/net6.0/Simple.Tests.assets.cache
+Simple.Tests/obj/Debug/net6.0/Simple.Tests.csproj.AssemblyReference.cache
+Simple.Tests/obj/Debug/net6.0/Simple.Tests.GeneratedMSBuildEditorConfig.editorconfig

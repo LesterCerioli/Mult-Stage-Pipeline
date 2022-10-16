@@ -1,0 +1,34 @@
+trigger:
+- dev-p1
+
+pool:
+  vnImage: 'ubuntu-latest'
+
+
+
+stages:
+- stage: Build
+  variables:
+    BuildConfiguration: 'Release'
+  jobs:
+  - job: BuildJob
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - script: dotnet build ./Simple.sln
+      displayName: Building
+- stage: Deploy
+  displayName: Deploy Stage
+  jobs:
+  - deployment: deploy
+    displayName: Deploy Job
+    environment: 'dev'
+    pool:
+      vmImage: 'ubuntu-latest'    
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+            - script: echo 'Deploy Dev' 
+            
+
